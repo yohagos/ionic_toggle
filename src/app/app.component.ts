@@ -7,22 +7,10 @@ import { MenuController} from "@ionic/angular";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-public title: string = "";
+public title: string = "testing";
 
-constructor(private menu: MenuController) { }
+constructor() {
 
-openFirst() {
-  this.menu.enable(true, 'first');
-  this.menu.open('first');
-}
-
-openEnd() {
-  this.menu.open('end');
-}
-
-openCustom() {
-  this.menu.enable(true, 'custom');
-  this.menu.open('custom');
 }
 
 }
